@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/39c1e83d1f.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-input-container">
+        <div class="slides-container">
+          <div class="slide" id="titleContainer">
+            <h1>Todo List</h1>
+          </div>
+
+          <div class="slide" id="inputContainer">
+            <input id="taskInput" type="text" placeholder="Add a new task..." />
+            <button class="btn" id="addBtn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-display-container">
+        <ul class="task-list"></ul>
+      </div>
+
+      <button id="deleteAllBtn">
+        <p>Delete All</p>
+        <i class="fa-solid fa-trash"></i>
+      </button>
+
+      <button onclick="switchSlides()" id="newTaskBtn">
+        <span><i class="fa-solid fa-plus"></i></span>
+        <p>New Task</p>
+      </button>
+    </div>
+  </body>
+</html>
